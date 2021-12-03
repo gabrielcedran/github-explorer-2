@@ -1,5 +1,5 @@
-const test = {
-    name: 'don bob'
-}
+import React from 'react';
 
-console.log(test.address?.street);
+function App() {
+    return <h1>Hello world</h1>
+}

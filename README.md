@@ -6,6 +6,9 @@
 4. Create the project's structure (public and src)
 5. Add babel's dependency - `yarn add @babel/core @babel/cli @babel/preset-env -D`. Babel is a transcompiler that converts the newest js features into code that is backwards compatible with old js engines "old browsers", thus allowing developers to take advantage of them not having to worry about version compatibility. It is only necessary for development as the code is translated during the building process.
 `babel/cli` allows executing babel from the command line (yarn babel -h). `babel/preset-env` identifies which type of application is being executed (node, react, native) and converts the code in the best way possible.
+6. Create `babel.config.js` file and add the `'@babel/preset-env'` config
+7. Add babel's dependency to support react code - `yarn add @babel/preset-react -D`
+8. Add the `'@babel/preset-react'` to the `babel.config.js` file to enable babel to support react
 
 
 
