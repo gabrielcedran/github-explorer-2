@@ -24,3 +24,31 @@ To manually translate a js file, use the following command:
 
 ### Using webpack
 To trigger the bundling process just execute the command `yarn webpack`.
+
+## Concepts of React
+
+React transforms react code (and html written directly in the js code) into standard javascript script code that manipulates the ui elements via the html dom (when it is web).
+Example:
+```
+function App() {
+    return <h1>Hello World</h1>
+}
+```
+
+will be converted into something like:
+```
+function App() {
+    return _react["default"].createElement("h1", null, "Hello World")
+}
+```
+
+### Avoiding the need to import react in every single file
+
+In order to support react syntax (html tags like) in javascript, the react library must be imported in files that are using react code. 
+To avoid boilerplate, since version 17, it is possible configure babel to handle this requirement via configuration automatically.
+
+```
+['@babel/preset-react', {
+    runtime: 'automatic'
+}]
+```
