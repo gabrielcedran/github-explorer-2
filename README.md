@@ -9,10 +9,18 @@
 6. Create `babel.config.js` file and add the `'@babel/preset-env'` config
 7. Add babel's dependency to support react code - `yarn add @babel/preset-react -D`
 8. Add the `'@babel/preset-react'` to the `babel.config.js` file to enable babel to support react
-
-
+9. Add the webpack dependency for building process. It bundles JS files for usage on browsers. `yarn add webpack webpack-cli webpack-dev-server -D`
+10. Add the `babel-loader` dependency to allow webpack to use babel when bundling the project. `yarn add babel-loader -D`
+11. Create the `webpack.config.js` file in the root path of the project and add initial configuration.
+`entry` is the file that will be used to initiate the bundling process. 
+`output` what is going to be the generated file name and location. 
+`resolve` is used to configure which files webpack should consider when bundling based on the `entry` (imports)
+`rules` how webpack should bundle. E.g which directories it should not process (e.g node_modules), which loader it should use, etc 
 
 ### Using babel/cli
 To manually translate a js file, use the following command:
 
 `yarn babel {from_file} --out-file {to_file}` example `yarn babel src/index.js --out-file dist/bundle.js`
+
+### Using webpack
+To trigger the bundling process just execute the command `yarn webpack`.
