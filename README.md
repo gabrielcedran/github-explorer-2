@@ -17,6 +17,7 @@
 `resolve` is used to configure which files webpack should consider when bundling based on the `entry` (imports)
 `rules` how webpack should bundle. E.g which directories it should not process (e.g node_modules), which loader it should use, etc 
 12. To remove the need of statically referencing the bundled js in the html page and in the webpack configuration, it is possible to use the  `html-webpack-plugin` - `yarn add html-webpack-plugin -D`. It takes care of injecting the bundled file(s) in the configured html pages according to the configuration. 
+13. Add the `webpack-dev-server` and the relevant configuration to allow smoother development by enabling automatic code conversion (bundling) and the files being served by a server running on localhost. `yarn add webpack-dev-server -D`. To start the dev-server run the command `yarn webpack serve`.
 
 ### Using babel/cli
 To manually translate a js file, use the following command:
