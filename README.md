@@ -1,4 +1,6 @@
-## Creating a new React project from scratch (not using create-react-app)
+# Creating a new React project from scratch (not using create-react-app)
+
+## Set up a new development environment
 
 1. Initialize the repository with the command `yarn init -y` (if yarn is not available or won't be used `npm init -y`). This step will create a package.json in the folder where the command was executed.
 2. Add react's dependency - `yarn add react`
@@ -21,6 +23,7 @@
 14. Configure source map to ease debugging during development. It allows the developer tools to show the original code in place of the translated, minified and bundled one when logging errors/messages or on debug mode (when placing breakpoints). There are different types of source map. They are meant for different usage like development and production and offer different levels of details, which implies on processing time.  
 15. Split between development and production environments (change webpack mode and source map according to NODE_ENV environment variable). To manage environment variables independently of OS, add the dependency `cross-env` - `yarn add cross-env -D`
 16. Configure webpack to support (and know how to cope with) importing stylesheets (css files) directly from the js files by using the loaders `style-loader` and `css-loader` - `yarn add style-loader css-loader -D` and adding a new rule on webpack.config.js file to delegate the processing of css to them.
+17. Configure SASS to enable css extensions and extra powerful features on top of css. It is yet another webpack loader `sass-loader`, `sass` dependency itself - `yarn add sass-loader node-sass -D` and a small tweak on the css rules in the webpack.config.js file (.scss is used for sass files which requires braces to delimit selectors and .sass does not require braces but indentation).
 
 
 ### Using babel/cli
