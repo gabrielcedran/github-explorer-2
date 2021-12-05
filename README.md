@@ -61,6 +61,8 @@ By convention there should never be more than one component per file and the com
 
 Components can be either a simple function straightaway or a class which extends Component.
 
+Every time the state or property of a component changes, that component is rerendered (useEffect or via Component class inheritance)
+
 ### Avoiding the need to import react in every single file
 
 In order to support react syntax (html tags like) in javascript, the react library must be imported in files that are using react code. 
