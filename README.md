@@ -51,6 +51,11 @@ function App() {
 }
 ```
 
+### Components
+Components are the building blocks of any React app. They encapsulate bits of code that make sense together so that they can be reused. They are nothing more than a function that returns a html.
+
+By convention there should never be more than one component per file and the component name should always start with a capital letter. 
+
 ### Avoiding the need to import react in every single file
 
 In order to support react syntax (html tags like) in javascript, the react library must be imported in files that are using react code. 
