@@ -1,3 +1,4 @@
+import { RepositoryItem } from "./RepositoryItem";
 
 export function RepositoryList() {
     return (
@@ -5,20 +6,8 @@ export function RepositoryList() {
             <h1>Repository List</h1>
 
             <ul>
-                <li>
-                    <strong>unform</strong>
-                    <p>Forms in React</p>
-                    <a href="">
-                        Open Repository
-                    </a>
-                </li>
-                <li>
-                    <strong>unform</strong>
-                    <p>Forms in React</p>
-                    <a href="">
-                        Open Repository
-                    </a>
-                </li>
+                <RepositoryItem repository="test" />
+                <RepositoryItem repository="test 2" />
             </ul>
         </section>
     )
