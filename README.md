@@ -36,6 +36,8 @@ To trigger the bundling process just execute the command `yarn webpack`.
 
 ## Concepts of React
 
+Component x Properties x State
+
 React transforms react code (and html written directly in the js code) into standard javascript script code that manipulates the ui elements via the html dom (when it is web).
 Example:
 ```
@@ -55,6 +57,8 @@ function App() {
 Components are the building blocks of any React app. They encapsulate bits of code that make sense together so that they can be reused. They are nothing more than a function that returns a html.
 
 By convention there should never be more than one component per file and the component name should always start with a capital letter. 
+
+Components can be either a simple function straightaway or a class which extends Component.
 
 ### Avoiding the need to import react in every single file
 
