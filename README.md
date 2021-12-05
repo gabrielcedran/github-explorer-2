@@ -18,6 +18,7 @@
 `rules` how webpack should bundle. E.g which directories it should not process (e.g node_modules), which loader it should use, etc 
 12. To remove the need of statically referencing the bundled js in the html page and in the webpack configuration, it is possible to use the  `html-webpack-plugin` - `yarn add html-webpack-plugin -D`. It takes care of injecting the bundled file(s) in the configured html pages according to the configuration. 
 13. Add the `webpack-dev-server` and the relevant configuration to allow smoother development by enabling automatic code conversion (bundling) and the files being served by a server running on localhost. `yarn add webpack-dev-server -D`. To start the dev-server run the command `yarn webpack serve`.
+14. Configure source map to ease debugging during development. It allows the developer tools to show the original code in place of the translated, minified and bundled one when logging errors/messages or on debug mode (when placing breakpoints). There are different types of source map. They are meant for different usage like development and production and offer different levels of details, which implies on processing time.  
 
 ### Using babel/cli
 To manually translate a js file, use the following command:
