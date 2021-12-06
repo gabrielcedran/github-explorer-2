@@ -5,7 +5,7 @@ export function App() {
 
     return (
         <>
-            <RepositoryList/>
+            <RepositoryList />
         </>
     )
 }
