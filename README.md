@@ -25,7 +25,9 @@
 16. Configure webpack to support (and know how to cope with) importing stylesheets (css files) directly from the js files by using the loaders `style-loader` and `css-loader` - `yarn add style-loader css-loader -D` and adding a new rule on webpack.config.js file to delegate the processing of css to them.
 17. Configure SASS to enable css extensions and extra powerful features on top of css. It is yet another webpack loader `sass-loader`, `sass` dependency itself - `yarn add sass-loader node-sass -D` and a small tweak on the css rules in the webpack.config.js file (.scss is used for sass files which requires braces to delimit selectors and .sass does not require braces but indentation).
 18. Configure the `fast refresh plugin` to enable webpack to update the application upon changes but not resetting the component states (eases development when you have a scenario set and needs to change the code not losing the scenario). `yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh`
-
+19. Add typescript dependency - `yarn add typescript -D`. Run the command `yarn tsc --init` and add initial configuration.
+20. Add babel's preset for typescript `yarn add @babel/preset-typescript -D`
+21. Add third party libraries' types definition eg `yarn add @types/react-dom -D`
 
 ### Using babel/cli
 To manually translate a js file, use the following command:
